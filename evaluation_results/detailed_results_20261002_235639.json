@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "description": "SQL Injection vulnerability",
+    "agents": {
+      "bug_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 1,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      },
+      "style_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "description": "Division by zero bug",
+    "agents": {
+      "bug_agent": {
+        "found": 0,
+        "expected": 1,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "style_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "description": "Poor code style - deeply nested",
+    "agents": {
+      "bug_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "style_agent": {
+        "found": 0,
+        "expected": 1,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "description": "Clean code - no issues",
+    "agents": {
+      "bug_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "style_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "description": "Multiple issues",
+    "agents": {
+      "bug_agent": {
+        "found": 0,
+        "expected": 1,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 1,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      },
+      "style_agent": {
+        "found": 0,
+        "expected": 1,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      }
+    }
+  }
+]

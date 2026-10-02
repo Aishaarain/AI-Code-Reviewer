@@ -1,0 +1,42 @@
+{
+  "bug_agent": {
+    "accuracy": 40.0,
+    "precision": 12.5,
+    "recall": 50.0,
+    "f1_score": 20.0,
+    "hallucination_rate": 87.5,
+    "true_positives": 1,
+    "false_positives": 7,
+    "false_negatives": 1,
+    "true_negatives": 1,
+    "tests_run": 5
+  },
+  "security_agent": {
+    "accuracy": 60.0,
+    "precision": 33.33,
+    "recall": 50.0,
+    "f1_score": 40.0,
+    "hallucination_rate": 66.67,
+    "true_positives": 1,
+    "false_positives": 2,
+    "false_negatives": 1,
+    "true_negatives": 2,
+    "tests_run": 5
+  },
+  "style_agent": {
+    "accuracy": 20.0,
+    "precision": 11.11,
+    "recall": 50.0,
+    "f1_score": 18.18,
+    "hallucination_rate": 88.89,
+    "true_positives": 1,
+    "false_positives": 8,
+    "false_negatives": 1,
+    "true_negatives": 1,
+    "tests_run": 5
+  },
+  "synthesizer": {
+    "accuracy": 0,
+    "tests_run": 0
+  }
+}

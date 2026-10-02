@@ -1,0 +1,227 @@
+{
+  "bug": {
+    "finding_level": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "hallucination_rate": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 9
+    },
+    "case_level": {
+      "exact_match_rate": 67.86,
+      "false_alarm_rate": 0.0,
+      "cases": 28,
+      "clean_cases": 19
+    },
+    "failures": [
+      {
+        "case": "bug_division_by_zero",
+        "false_positives": [],
+        "missed": [
+          "division_by_zero"
+        ]
+      },
+      {
+        "case": "bug_null_dereference",
+        "false_positives": [],
+        "missed": [
+          "null_dereference"
+        ]
+      },
+      {
+        "case": "bug_missing_key",
+        "false_positives": [],
+        "missed": [
+          "missing_key_access"
+        ]
+      },
+      {
+        "case": "bug_off_by_one",
+        "false_positives": [],
+        "missed": [
+          "off_by_one"
+        ]
+      },
+      {
+        "case": "bug_incorrect_logic",
+        "false_positives": [],
+        "missed": [
+          "incorrect_logic"
+        ]
+      },
+      {
+        "case": "bug_unreachable_code",
+        "false_positives": [],
+        "missed": [
+          "unreachable_code"
+        ]
+      },
+      {
+        "case": "bug_resource_leak",
+        "false_positives": [],
+        "missed": [
+          "resource_leak"
+        ]
+      },
+      {
+        "case": "bug_type_error",
+        "false_positives": [],
+        "missed": [
+          "type_error"
+        ]
+      },
+      {
+        "case": "multi_issue",
+        "false_positives": [],
+        "missed": [
+          "missing_key_access"
+        ]
+      }
+    ]
+  },
+  "security": {
+    "finding_level": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "hallucination_rate": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 9
+    },
+    "case_level": {
+      "exact_match_rate": 67.86,
+      "false_alarm_rate": 0.0,
+      "cases": 28,
+      "clean_cases": 19
+    },
+    "failures": [
+      {
+        "case": "sec_sql_injection",
+        "false_positives": [],
+        "missed": [
+          "sql_injection"
+        ]
+      },
+      {
+        "case": "sec_command_injection",
+        "false_positives": [],
+        "missed": [
+          "command_injection"
+        ]
+      },
+      {
+        "case": "sec_eval",
+        "false_positives": [],
+        "missed": [
+          "code_injection"
+        ]
+      },
+      {
+        "case": "sec_hardcoded_secret",
+        "false_positives": [],
+        "missed": [
+          "hardcoded_secret"
+        ]
+      },
+      {
+        "case": "sec_path_traversal",
+        "false_positives": [],
+        "missed": [
+          "path_traversal"
+        ]
+      },
+      {
+        "case": "sec_xss",
+        "false_positives": [],
+        "missed": [
+          "xss"
+        ]
+      },
+      {
+        "case": "sec_insecure_deserialization",
+        "false_positives": [],
+        "missed": [
+          "insecure_deserialization"
+        ]
+      },
+      {
+        "case": "sec_weak_crypto",
+        "false_positives": [],
+        "missed": [
+          "weak_crypto"
+        ]
+      },
+      {
+        "case": "multi_issue",
+        "false_positives": [],
+        "missed": [
+          "code_injection"
+        ]
+      }
+    ]
+  },
+  "style": {
+    "finding_level": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "hallucination_rate": 100.0,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 5
+    },
+    "case_level": {
+      "exact_match_rate": 78.57,
+      "false_alarm_rate": 4.35,
+      "cases": 28,
+      "clean_cases": 23
+    },
+    "failures": [
+      {
+        "case": "bug_division_by_zero",
+        "false_positives": [
+          "other_style"
+        ],
+        "missed": []
+      },
+      {
+        "case": "style_deep_nesting",
+        "false_positives": [],
+        "missed": [
+          "deep_nesting"
+        ]
+      },
+      {
+        "case": "style_magic_number",
+        "false_positives": [],
+        "missed": [
+          "magic_number"
+        ]
+      },
+      {
+        "case": "style_code_duplication",
+        "false_positives": [],
+        "missed": [
+          "code_duplication"
+        ]
+      },
+      {
+        "case": "style_poor_naming",
+        "false_positives": [],
+        "missed": [
+          "poor_naming"
+        ]
+      },
+      {
+        "case": "multi_issue",
+        "false_positives": [],
+        "missed": [
+          "magic_number"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+================================================================================
+AGENT ACCURACY EVALUATION REPORT
+================================================================================
+
+Date: 2026-10-02 23:57:13
+Test Cases: 5
+
+
+Bug Agent
+----------------------------------------
+Accuracy:         60.00%
+Precision:        0.00%
+Recall:           0.00%
+F1-Score:         0.00%
+Hallucination:    0.00%
+
+True Positives:   0
+False Positives:  0
+False Negatives:  2
+Tests Run:        5
+
+Security Agent
+----------------------------------------
+Accuracy:         60.00%
+Precision:        0.00%
+Recall:           0.00%
+F1-Score:         0.00%
+Hallucination:    0.00%
+
+True Positives:   0
+False Positives:  0
+False Negatives:  2
+Tests Run:        5
+
+Style Agent
+----------------------------------------
+Accuracy:         60.00%
+Precision:        0.00%
+Recall:           0.00%
+F1-Score:         0.00%
+Hallucination:    0.00%
+
+True Positives:   0
+False Positives:  0
+False Negatives:  2
+Tests Run:        5
+
+Synthesizer
+----------------------------------------
+Accuracy:    0.00%
+Tests Run:   0
+
+================================================================================
+OVERALL AVERAGE ACCURACY: 45.00%
+================================================================================

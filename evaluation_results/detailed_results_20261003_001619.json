@@ -1,0 +1,231 @@
+[
+  {
+    "id": 1,
+    "description": "SQL Injection vulnerability",
+    "agents": {
+      "bug_agent": {
+        "found": 1,
+        "expected": 0,
+        "findings": [
+          "SQL injection vulnerability due to string interpolation"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      },
+      "security_agent": {
+        "found": 1,
+        "expected": 1,
+        "findings": [
+          "SQL Injection vulnerability"
+        ],
+        "metrics": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      },
+      "style_agent": {
+        "found": 3,
+        "expected": 0,
+        "findings": [
+          "SQL injection risk due to string interpolation",
+          "Missing docstring and type hints",
+          "Implicit reliance on a global `db` object"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "description": "Division by zero bug",
+    "agents": {
+      "bug_agent": {
+        "found": 1,
+        "expected": 1,
+        "findings": [
+          "Division by zero not handled"
+        ],
+        "metrics": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "style_agent": {
+        "found": 3,
+        "expected": 0,
+        "findings": [
+          "Potential division by zero",
+          "Missing docstring for public function",
+          "Missing type hints"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "description": "Poor code style - deeply nested",
+    "agents": {
+      "bug_agent": {
+        "found": 1,
+        "expected": 0,
+        "findings": [
+          "Missing type validation for inputs"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "style_agent": {
+        "found": 2,
+        "expected": 1,
+        "findings": [
+          "Deeply nested conditionals",
+          "Missing docstring and type hints"
+        ],
+        "metrics": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "true_negatives": 0
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "description": "Clean code - no issues",
+    "agents": {
+      "bug_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "security_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      },
+      "style_agent": {
+        "found": 0,
+        "expected": 0,
+        "findings": [],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "true_negatives": 1
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "description": "Multiple issues",
+    "agents": {
+      "bug_agent": {
+        "found": 6,
+        "expected": 1,
+        "findings": [
+          "Use of eval on raw user input",
+          "Uncaught exceptions from eval",
+          "Missing error handling for fetch_data()",
+          "Potential KeyError when accessing data['key']",
+          "Implicit `None` return for values <= 42",
+          "Magic number 42 used directly in comparison"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      },
+      "security_agent": {
+        "found": 1,
+        "expected": 1,
+        "findings": [
+          "Code injection via eval on untrusted input"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      },
+      "style_agent": {
+        "found": 5,
+        "expected": 1,
+        "findings": [
+          "Use of eval on raw user input",
+          "Missing error handling for external calls",
+          "Magic number used in comparison",
+          "Missing docstring and type hints",
+          "Potential KeyError when accessing dictionary key"
+        ],
+        "metrics": {
+          "true_positives": 0,
+          "false_positives": 5,
+          "false_negatives": 1,
+          "true_negatives": 0
+        }
+      }
+    }
+  }
+]

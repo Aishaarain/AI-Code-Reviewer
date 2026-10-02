@@ -1,0 +1,87 @@
+================================================================================
+                    AGENT ACCURACY TESTING - QUICK GUIDE
+================================================================================
+
+RUN TESTS
+---------
+.venv\Scripts\python.exe run_tests.py
+
+
+VIEW RESULTS
+------------
+evaluation_results\metrics_*.json         → Numbers (JSON)
+evaluation_results\detailed_results_*.json → What each agent found
+evaluation_results\report_*.txt           → Human-readable report
+
+
+CURRENT PERFORMANCE (Last Run)
+-------------------------------
+Bug Agent:      40% accuracy, 87% hallucination ⚠️  NEEDS WORK
+Security Agent: 60% accuracy, 67% hallucination ⚠️  MODERATE
+Style Agent:    20% accuracy, 89% hallucination ⚠️  NEEDS WORK
+
+Overall: 30% average accuracy
+
+
+WHAT THE METRICS MEAN
+----------------------
+Accuracy:        Overall correctness (want: >80%)
+Precision:       When agent flags something, is it real? (want: >70%)
+Recall:          Does it catch real issues? (want: >70%)
+F1-Score:        Balance between precision and recall
+Hallucination:   False positive rate (want: <30%)
+
+
+IMPROVE AGENTS
+--------------
+1. Edit prompts: reviewer\prompts\bug.md
+                 reviewer\prompts\security.md
+                 reviewer\prompts\style.md
+
+2. Make agents more conservative (reduce false positives)
+
+3. Add examples of what TO flag and what NOT to flag
+
+4. Re-run tests after changes
+
+
+ADD MORE TEST CASES
+-------------------
+Edit: tests\test_agent_accuracy.py
+Add to TEST_CASES list with:
+  - id: unique number
+  - description: what you're testing
+  - diff: git diff of code changes
+  - expected: what agents should find
+
+
+TROUBLESHOOTING
+---------------
+"No module named pytest"
+  → .venv\Scripts\python.exe -m pip install pytest
+
+"Unicode error"
+  → Use run_tests.py (not evaluate_agents.py directly)
+
+"Rate limit error"
+  → Wait 10 seconds and try again
+
+
+PRODUCTION READINESS CHECKLIST
+-------------------------------
+[ ] Accuracy > 80% for all agents
+[ ] Hallucination rate < 30%
+[ ] Recall > 70% (catches most issues)
+[ ] Tested with at least 10 diverse code samples
+
+
+FILES YOU CREATED
+-----------------
+✅ tests/test_agent_accuracy.py     → Test framework
+✅ evaluate_agents.py               → Evaluation script
+✅ run_tests.py                     → Windows-friendly wrapper
+✅ RUN_TESTS.md                     → Detailed instructions
+✅ TESTING_SUMMARY.md               → Complete analysis
+✅ QUICK_TEST_GUIDE.txt             → This file
+
+================================================================================
